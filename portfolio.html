@@ -24,11 +24,15 @@
 
 <body bgcolor="black">
 
-  <audio autoplay>
+  <audio autoplay id="andso">
     <source src="andsoo.mp3" type="audio/mpeg">
   </audio>
 
-  
+  <script>
+  var audio = document.getElementById("andso");
+  audio.volume = 0.2;
+</script>
+
   <center>
     <h1>This is my Portfolio Page!</h1>
     <img src="images/portfolio.jpg" height="250">
