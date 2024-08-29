@@ -31,10 +31,12 @@
 .topnav .icon {
   display: none;
 }
-
+/* Makes website text white */
 body {
   color: white;
 }
+
+/*Makes top bar sticky */
 
 .topnav {
   position: -webkit-sticky; /* Safari */
