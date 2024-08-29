@@ -10,7 +10,8 @@
   <title>AP CS | Home Page</title>
 </head>
 
-</center>
+<!--Defining top bar text and links-->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav" id="myTopnav">
@@ -25,20 +26,28 @@
   </center>
 </div>
 
+<!-- Setting default website background color-->
 
 <body bgcolor="black">
 
-  <audio autoplay id="andso">
-    <source src="andsoo.mp3" type="audio/mpeg">
-  </audio>
+  <!--Adding background music and setting default volume to ".1"-->
+  <div id="bgmusic">
+    <audio autoplay id="andso">
+      <source src="andsoo.mp3" type="audio/mpeg">
+    </audio>
 
-  <script>
-    var audio = document.getElementById("andso");
-    audio.volume = 0.1;
-  </script>
+    <script>
+      var audio = document.getElementById("andso");
+      audio.volume = 0.1;
+    </script>
+  </div>
 
+  <!-- Actual content-->
+   <div id="realcontent">
   <center>
+    <!-- Using animatecss to make the tittle text "rubber band"-->
     <h1 class="animate__animated animate__rubberBand"> Welcome to the Home Page!</h1>
+    <!-- Using "span" and "style" to set text color-->
     <h2> The Trap house <span id="vamp" style="color:rgb(218, 15, 15)"> <em>(&#128520so vamp!&#128520)</em> </span></h2>
     <img src="https://miro.medium.com/v2/resize:fit:628/1*htIxokp-_d9Qvb0gIap7rg.jpeg" height="200" alt="centered image"
       class="aligncenter">
@@ -52,6 +61,7 @@
     <p style="color:blueviolet"><strong>EVERYTHING HERE IS SATIRE</strong></p>
   </center>
   <br>
+</div>
 </body>
 
 </html>
